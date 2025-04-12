@@ -58,7 +58,9 @@ export default function AdminDashboard() {
       {/* Sidebar */}
       <div className="sidebar bg-gray-800 text-white w-64 fixed h-full">
         <div className="p-4 flex items-center">
-          <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+          <div onClick={() => {
+            window.location.href = "/";
+          }} className="w-10 h-10 cursor-pointer bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
             M
           </div>
           <span className="ml-2 text-xl font-semibold">Mindhail Admin</span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Templates/load-templates';
 import { Link , useLocation } from 'react-router-dom';
+import Footer from '../Common/Footer';
 
 export default function Home() {
   return (
@@ -167,50 +168,7 @@ const HeroSection = () => (
     </section>
   );
   
-  const Footer = () => (
-    <footer className="bg-gray-800 text-white py-12 px-4">
-      <div className="container mx-auto grid md:grid-cols-4 gap-8">
-        <div>
-          <div className="flex items-center mb-4">
-            <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center font-bold text-xl">M</div>
-            <span className="ml-2 text-xl font-semibold">Mindhail</span>
-          </div>
-          <p className="text-gray-400">Your mental health partner for a better tomorrow.</p>
-        </div>
-        <FooterLinks title="Quick Links" links={["Home", "Services", "AI Chat", "Community", "Contact"]} />
-        <FooterLinks title="Legal" links={["Privacy Policy", "Terms of Service", "HIPAA Compliance", "Cookie Policy"]} />
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-          <div className="flex space-x-4 text-xl text-gray-400 hover:text-white">
-            {["facebook-f", "twitter", "instagram", "linkedin-in"].map((icon, idx) => (
-              <a href="#" key={idx}><i className={`fab fa-${icon}`} /></a>
-            ))}
-          </div>
-          <div className="mt-6">
-            <p className="text-gray-400">Subscribe to our newsletter</p>
-            <div className="flex mt-2">
-              <input type="email" placeholder="Your email" className="px-4 py-2 w-full rounded-l-md text-gray-800" />
-              <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r-md">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2023 Mindhail. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-  
-  const FooterLinks = ({ title, links }) => (
-    <div>
-      <h3 className="text-lg font-semibold mb-4">{title}</h3>
-      <ul className="space-y-2">
-        {links.map((link, idx) => (
-          <li key={idx}><a href="#" className="text-gray-400 hover:text-white">{link}</a></li>
-        ))}
-      </ul>
-    </div>
-  );
+
 
   const linkClasses = (path) => {
     const isActive = location.pathname === path;

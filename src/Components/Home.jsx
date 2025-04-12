@@ -73,7 +73,7 @@ const HeroSection = () => (
         Mindhail connects you with professional therapists and AI-powered tools to support your mental wellbeing.
       </p>
       <div className="space-x-4">
-        <a href="#services" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">Explore Services</a>
+        <Link to="/services" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">Explore Services</Link>
         <a href="#" className="border border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-md font-medium transition duration-300">Learn More</a>
       </div>
     </section>

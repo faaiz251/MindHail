@@ -23,7 +23,7 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-3 md:py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
+            <Link to="/admin-dashboard" className="flex items-center group">
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl transition-all duration-300 group-hover:bg-blue-700">
                 M
               </div>
